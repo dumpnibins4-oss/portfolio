@@ -12,7 +12,7 @@ const profileImage = "./images/red-profile.jpg"
 
 export default function HomeSection() {
     const occupations = [
-        "Full Stack Web Developer",
+        "Full Stack Developer",
         "UI/UX Enthusiast",
     ]
     

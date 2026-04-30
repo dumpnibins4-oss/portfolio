@@ -45,7 +45,7 @@ export default function ContactSection() {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: data.error || 'Failed to send message. Please try again.',
+                    text: data.error || 'Failed to send message',
                     confirmButtonColor: '#ef4444',
                     background: '#1f2937',
                     color: '#fff'
@@ -55,7 +55,7 @@ export default function ContactSection() {
             Swal.fire({
                 icon: 'error',
                 title: 'Network Error',
-                text: 'Unable to send message. Please check your connection.',
+                text: error,
                 confirmButtonColor: '#ef4444',
                 background: '#1f2937',
                 color: '#fff'
@@ -67,17 +67,17 @@ export default function ContactSection() {
 
     return (
         <>
-            <div id="contacts" className="flex flex-col items-start justify-start w-full lg:h-screen px-5 lg:px-40 gap-15">
-                <div className="w-full lg:w-1/2 flex flex-row items-center justify-start gap-5">
+            <div id="contacts" className="flex flex-col items-start justify-start w-full xl:h-screen px-5 xl:px-40 gap-15">
+                <div className="w-full xl:w-1/2 flex flex-row items-center justify-start gap-5">
                     <h1 className="text-white text-2xl font-semibold"><span className="text-red-500">#</span>contacts</h1>
                     <div className="flex-grow bg-red-500 h-[1px] rounded-full"></div>
                 </div>
-                <div className="flex flex-col item-center justify-start w-full h-full gap-10 lg:px-40">
+                <div className="flex flex-col item-center justify-start w-full h-full gap-10 xl:px-40">
                     <div className="flex flex-col items-center justify-center gap-5">
                         <h2 className="text-2xl text-white font-semibold">Get In Touch</h2>
                         <p className="text-white text-center">Have a project in mind or want to collaborate? Feel free to reach out. I'd love to hear from you!</p>
                     </div>
-                    <div className="flex flex-col lg:grid grid-cols-2 w-full h-full gap-10">
+                    <div className="flex flex-col xl:grid grid-cols-2 w-full h-full gap-10">
                         <div className="flex flex-col items-start justify-start gap-5">
                             <h2 className="text-xl text-white text-medium">Contact Information</h2>
                             <div className="flex flex-row items-center justify-start gap-2">
@@ -121,7 +121,7 @@ export default function ContactSection() {
                             </div>
                         </div>
                         <div className="flex flex-col items-start justify-start w-full h-full">
-                            <form onSubmit={handleSubmit} className="flex flex-col items-start justify-center gap-5 lg:justify-between w-full h-full pb-15 lg:pb-25">
+                            <form onSubmit={handleSubmit} className="flex flex-col items-start justify-center gap-5 xl:justify-between w-full h-full pb-15 xl:pb-25">
                                 <div className="flex flex-col items-start justify-center w-full gap-1">
                                     <p className="text-white">Name</p>
                                     <input

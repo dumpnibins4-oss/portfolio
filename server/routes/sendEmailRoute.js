@@ -17,7 +17,7 @@ router.post('/send-email', async (req, res) => {
     } catch (err) {
         console.error('Error in /send-email route:', err)
         res.status(500).json({
-            error: 'Failed to send email.',
+            error: err.message,
             details: err.message
         })
     }
